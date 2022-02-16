@@ -23,9 +23,13 @@ int main(){
             x->takeAMove();
             initiateAMove(Players);
         }
+        for(auto x= Players.begin();x!=Players.end();++x){
+            cout<<(*x).getName()<<"<------->"<<(*x).getScore()<<endl;       
+        }
     }
+    cout<<"____________Scoreboard______________\n";
     for(auto x= Players.begin();x!=Players.end();++x){
-        cout<<(*x).getScore()<<endl;       
+            cout<<(*x).getName()<<"<------->"<<(*x).getScore()<<endl;       
     }
     cin.get();
 }
